@@ -15,7 +15,7 @@ import { Menubar } from 'primeng/menubar';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   items: MenuItem[] | undefined;
 
   ngOnInit() {

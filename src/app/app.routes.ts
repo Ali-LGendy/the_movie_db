@@ -22,7 +22,8 @@ export const routes: Routes = [
   { path: 'actors', component: ActorsComponent, pathMatch: 'full' },
   { path: 'actor/:id', component: ActorDetailsComponent, pathMatch: 'full' },
 
-  {path: 'aboutUs', component: AboutUsComponent, pathMatch: 'full' },
+  {path: 'about-us', component: AboutUsComponent, pathMatch: 'full' },
+  {path: 'contact-us', component: AboutUsComponent, pathMatch: 'full'},
 
   { path: '**', component: NotFoundComponent },
 ];

@@ -1,1 +1,11 @@
-<p>footer works!</p>
+<footer class="p-4 bg-surface-100 border-t border-surface flex justify-between items-center">
+  <div class="flex items-center gap-4">
+    <p class="text-center">Copyright © {{year}} Movies. All rights reserved.</p>
+  </div>
+  <div class="flex gap-4">
+    <a *ngFor="let item of items" [routerLink]=item.link class="flex items-center gap-1">
+      <i *ngIf="item.icon" [class]=item.icon></i>
+      {{ item.name }}
+    </a>
+  </div>
+</footer>
